@@ -1,0 +1,78 @@
+[
+  {
+    "question": "Какой тип данных используется для хранения целых чисел в Python?\n1. Int\n2. Float\n3. String\n4. Boolean",
+    "correct_option": 0
+  },
+  {
+    "question": "Какая функция используется для вывода текста на экран?\n1. print\n2. input\n3. scan\n4. echo",
+    "correct_option": 0
+  },
+  {
+    "question": "Что такое PEP 8?\n1. Главный исполняемый файл Python\n2. Стандарт стилевого оформления кода на языке Python\n3. Библиотека для работы с API\n4. Метод шифрования данных",
+    "correct_option": 1
+  },
+  {
+    "question": "Как создать пустой список в Python?\n1. list()\n2. empty_list()\n3. []\n4. new_list()",
+    "correct_option": 2
+  },
+  {
+    "question": "Что такое lambda-функция в Python?\n1. Анонимная функция\n2. Список\n3. Словарь\n4. Класс",
+    "correct_option": 0
+  },
+  {
+    "question": "Какой символ используется для однострочного комментария в Python?\n1. //\n2. #\n3. --\n4. /* */",
+    "correct_option": 1
+  },
+  {
+    "question": "Как проверить длину строки в Python?\n1. length()\n2. count()\n3. size()\n4. len()",
+    "correct_option": 3
+  },
+  {
+    "question": "Что такое индекс в списках Python?\n1. Число элементов в списке\n2. Позиция элемента в списке\n3. Сумма элементов списка\n4. Размер списка",
+    "correct_option": 1
+  },
+  {
+    "question": "Какой метод используется для добавления элемента в конец списка?\n1. add()\n2. insert()\n3. append()\n4. extend()",
+    "correct_option": 2
+  },
+  {
+    "question": "Какая функция используется для считывания числа с клавиатуры?\n1. input()\n2. read()\n3. get()\n4. scanf()",
+    "correct_option": 0
+  },
+  {
+    "question": "Какой оператор используется для выполнения целочисленного деления?\n1. /\n2. %\n3. div\n4. //",
+    "correct_option": 3
+  },
+  {
+    "question": "Какая конструкция используется для обработки исключений в Python?\n1. try/except\n2. if/else\n3. for/in\n4. while/do",
+    "correct_option": 0
+  },
+  {
+    "question": "Что такое список (list) в Python?\n1. Упорядоченная коллекция элементов\n2. Словарь\n3. Множество\n4. Кортеж",
+    "correct_option": 0
+  },
+  {
+    "question": "Как получить подстроку из строки в Python?\n1. substr()\n2. slice()\n3. substring()\n4. splice()",
+    "correct_option": 1
+  },
+  {
+    "question": "Какое ключевое слово используется для определения функции в Python?\n1. define\n2. function\n3. func\n4. def",
+    "correct_option": 3
+  },
+  {
+    "question": "Какой метод используется для удаления элемента из списка по значению?\n1. remove()\n2. delete()\n3. pop()\n4. discard()",
+    "correct_option": 0
+  },
+  {
+    "question": "Как выполнить цикл по индексам элементов списка в Python?\n1. for i in range(len(my_list))\n2. for i in my_list\n3. for i in enumerate(my_list)\n4. for i in index(my_list)",
+    "correct_option": 0
+  },
+  {
+    "question": "Что такое виртуальное окружение (virtual environment) в Python?\n1. Виртуальная машина\n2. Среда для тестирования веб-приложений\n3. Изолированная среда для управления зависимостями проекта\n4. Облако для хранения данных",
+    "correct_option": 2
+  },
+  {
+    "question": "Как получить текущую дату и время в Python?\n1. datetime.now()\n2. current_datetime()\n3. time.today()\n4. now.date()",
+    "correct_option": 0
+  }
+]
