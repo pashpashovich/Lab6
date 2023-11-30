@@ -32,9 +32,7 @@ def show_results(chat_id):
     if not results_data:
         bot.send_message(chat_id, f"Вы первый участник")
     else:
-        sorted_results = sorted(results_data.items(), key=lambda x: x[1], reverse=True)
-
-        chat_ids = [result[0] for result in sorted_results]
+        sorted_results = sorted(results_data.items(), key=lambda x: x[1], reverse=True) # сортируем по отвеченным вопросам в обратном порядке
         found = next((result for result in sorted_results if str(chat_id) in result), None)
         if found:
             position = sorted_results.index(found) + 1
@@ -48,7 +46,6 @@ def read_questions():
     with open("questions.json", "r", encoding="utf-8") as file:
         questions = json.load(file)
 
-    # Extract answer choices from the question text
     for question in questions:
         question_text = question["question"]
         answer_choices = question_text.splitlines()[1:]
