@@ -128,11 +128,10 @@ def handle_message(message):
                 score = user["score"]
                 results[chat_id] = score
                 save_results(results)
-                bot.send_message(chat_id, f'Викторина завершена. Ваш счет: {score}/{len(questions)}', reply_markup=None)
                 show_results(chat_id)
     else:
         bot.send_message(message.chat.id,
-                         f"Привет! Чтобы начать викторину, отправьте команду /start.\n\nПравила викторины:\n* Ответьте на 10 вопросов, чтобы узнать свой результат.\n* Ответы")
+                         f"Привет! Чтобы начать викторину, отправьте команду /play")
 
 
 def send_question(chat_id):
@@ -145,21 +144,18 @@ def send_question(chat_id):
         question_text = question_data["question"]
         answer_choices = question_data["answer_choices"]
 
-        # Create a reply markup with numbered buttons
         markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
         for i, choice in enumerate(answer_choices, start=1):
             markup.add(types.KeyboardButton(f"{i}"))
 
-        # Send the question with the numbered keyboard markup
         bot.send_message(chat_id, question_text, reply_markup=markup)
     else:
-        bot.send_message(chat_id, "Вопросы закончились. Спасибо за участие!")
+        bot.send_message(chat_id, "Спасибо за участие!")
         results = load_results()
         if chat_id not in results:
             score = user["score"]
             results[chat_id] = score
             save_results(results)
-            bot.send_message(chat_id, f'Викторина завершена. Ваш счет: {score}/10', reply_markup=None)
             show_results(chat_id)
 
 
